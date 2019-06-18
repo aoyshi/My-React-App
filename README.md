@@ -1,3 +1,8 @@
+# Self-Tutorial
+
+Project for self-teaching ReactJS, Node/npm, Jest, RTL/Enzyme and Puppeteer for internship deliverable.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
