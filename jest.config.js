@@ -1,6 +1,6 @@
 module.exports = {
   // All imported modules in your tests should be mocked automatically
-  // automock: false,
+  // automock: true,
 
   // Stop running tests after the first failure
   // bail: false,
@@ -15,10 +15,10 @@ module.exports = {
   clearMocks: true,
 
   // Indicates whether the coverage information should be collected while executing the test
-  // collectCoverage: false,
+  collectCoverage: true,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  collectCoverageFrom: ['src/modules/**/*.{js,jsx,mjs}'],
+  // collectCoverageFrom: ['src/modules/**/*.{js,jsx,mjs}'],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
@@ -60,7 +60,14 @@ module.exports = {
   // ],
 
   // An array of file extensions your modules use
-  moduleFileExtensions: ['js', 'json', 'jsx'],
+  moduleFileExtensions: [
+    "js",
+    "json",
+    "jsx",
+    "node",
+    "ts",
+    "tsx"
+  ],
 
   // A map from regular expressions to module names that allow to stub out resources with a single module
   // moduleNameMapper: {},
@@ -99,9 +106,9 @@ module.exports = {
   // rootDir: null,
 
   // A list of paths to directories that Jest should use to search for files in
-  // roots: [
-  //   "<rootDir>"
-  // ],
+  roots: [
+     "<rootDir>"
+  ],
 
   // Allows you to use a custom runner instead of Jest's default test runner
   // runner: "jest-runner",
@@ -116,7 +123,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: 'jsdom',
+  // testEnvironment: 'jsdom',
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -140,7 +147,7 @@ module.exports = {
   // testRunner: "jasmine2",
 
   // This option sets the URL for the jsdom environment. It is reflected in properties such as location.href
-  testURL: 'http://localhost:1234',
+  // testURL: 'http://localhost:1234',
 
   // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
   // timers: "real",

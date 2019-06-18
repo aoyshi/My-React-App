@@ -10,7 +10,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test-unit": "jest --testPathPattern=test/js/unit/.*\\.test\\.js$ --env=jsdom",
+    "test-it": "jest --testPathPattern=test/js/it/.*\\.test\\.js$ --env=jsdom",
+    "test-e2e": "jest --testPathPattern=test/js/e2e/.*\\.test\\.js$ --env=jsdom",
+    "test": "npm run test-unit && npm run test-it && npm run test-e2e",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -28,5 +31,7 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "puppeteer": "^1.17.0"
+  }
 }
