@@ -4,6 +4,7 @@ Project for self-teaching ReactJS, Node/npm, Jest, RTL/Enzyme and Puppeteer for 
 
 ### Helpful Links:
 https://reactjs.org/docs/create-a-new-react-app.html
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
